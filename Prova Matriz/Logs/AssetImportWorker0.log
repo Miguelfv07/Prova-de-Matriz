@@ -418,3 +418,11 @@ Received Import Request.
 Start importing Assets/Scripts/Player.cs using Guid(7a56e5278ce977844b0e9ed13afc74cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19a6b58408b7d96bcad90c2a5ac5e8ce') in 0.002966 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 694.135706 seconds.
+  path: Assets/Scripts/Player.cs
+  artifactKey: Guid(7a56e5278ce977844b0e9ed13afc74cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player.cs using Guid(7a56e5278ce977844b0e9ed13afc74cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c70ef6c5103d5e661ffef6538265e4b') in 0.002910 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
