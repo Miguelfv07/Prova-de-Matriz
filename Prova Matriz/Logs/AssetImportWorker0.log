@@ -378,3 +378,11 @@ Received Import Request.
 Start importing Assets/Bloco.cs using Guid(bb8e51de3ad295743800ba85e5b02b9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ff0283b53ea92d51b7a3ba57bac4eba') in 0.000612 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 284.268238 seconds.
+  path: Assets/Bloco.cs
+  artifactKey: Guid(bb8e51de3ad295743800ba85e5b02b9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bloco.cs using Guid(bb8e51de3ad295743800ba85e5b02b9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b6df13ed58500d3b2ae5e4d3c8fcb89') in 0.000927 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0

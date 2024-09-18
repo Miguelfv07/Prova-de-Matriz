@@ -21,24 +21,22 @@ public class Bloco : MonoBehaviour
     {
         spriteRenderer.color = cor;
         conquistado = false;
+        jogadorDono = 0;
        
     }
     public void AlterarConquista(bool jogador1, Color corDoJogador)
     {
         conquistado = true;
-        corDoJogador = Color.red;
-        if (jogador1 = conquistado )
-        {
-            jogadorDono = jogador1 ? 1 : 0;
-            GameManager.instance.ConquistarTerritorio();
+        AtualizarCor(corDoJogador);
+       
+        
+        jogadorDono = jogador1 ? 1 : 2;
+        GameManager.instance.ConquistarTerritorio();
 
 
-        }
-        else
-        {
-            jogadorDono = 2;
-            GameManager.instance.ConquistarTerritorio();
-        }
+        
+       
+       
         
     }
     public bool PegarConquistado() 
