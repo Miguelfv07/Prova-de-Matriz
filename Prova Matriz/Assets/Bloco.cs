@@ -39,16 +39,18 @@ public class Bloco : MonoBehaviour
             jogadorDono = 2;
             GameManager.instance.ConquistarTerritorio();
         }
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
         
     }
-
-    // Update is called once per frame
-    void Update()
+    public bool PegarConquistado() 
     {
-        
+        return conquistado;
+    }
+    public int PegarJogadorDono()
+    {
+        return jogadorDono; 
+    }
+    private void AtualizarCor( Color novaCor)
+    {
+        spriteRenderer.color = novaCor;
     }
 }
