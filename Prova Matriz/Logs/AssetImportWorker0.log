@@ -289,3 +289,11 @@ Received Import Request.
 Start importing Assets/Scripts/GameManager.cs using Guid(78bd4683b9fcb084fb1dda603b740c8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9573a14b591eff288271b30114e7f5f') in 0.000552 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1250.058414 seconds.
+  path: Assets/Scripts/GameManager.cs
+  artifactKey: Guid(78bd4683b9fcb084fb1dda603b740c8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager.cs using Guid(78bd4683b9fcb084fb1dda603b740c8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '771796f08b377c9490a0456678d95481') in 0.012618 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
