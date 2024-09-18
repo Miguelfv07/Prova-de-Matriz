@@ -4,6 +4,39 @@ using UnityEngine;
 
 public class Bloco : MonoBehaviour
 {
+    bool conquistado;
+    SpriteRenderer spriteRenderer;
+    int jogadorDono;
+    
+
+    void Awake()
+    {
+        
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        InicializarBloco(Color.white);
+        
+    }
+
+    private void InicializarBloco(Color cor)
+    {
+        spriteRenderer.color = cor;
+        conquistado = false;
+       
+    }
+    public void AlterarConquista(bool jogador1, Color corDoJogador)
+    {
+        conquistado = true;
+        corDoJogador = Color.red;
+        if (jogador1 = conquistado )
+        {
+            jogadorDono = jogador1 ? 1 : 0;
+            
+        }
+        else
+        {
+            
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {
