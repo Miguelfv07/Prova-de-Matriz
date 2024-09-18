@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour
 
                 grade[i, j] = block.GetComponent<Bloco>();
                 PosicionarJogadores();
-                AjustarCamera();
+               // AjustarCamera();
             }
         }
     }
@@ -51,8 +51,6 @@ private void PosicionarJogadores()
 {
 
     Vector3 player1Position = new Vector3(0, 0, 0);
-
-
     Vector3 player2Position = new Vector3((numeroColunas - 1) * blockEspaco, 0, (numeroColunas - 1) * blockEspaco);
 
     Instantiate(player1Prefab, player1Position, Quaternion.identity);
@@ -63,11 +61,10 @@ private void PosicionarJogadores()
 private void AjustarCamera()
 {
 
-    Vector3 posicaoCentral = new Vector3((numeroColunas - 1) * blockEspaco / 2, 10, (numeroLinhas - 1) * blockEspaco / 2);
+    //Vector3 posicaoCentral = new Vector3((numeroColunas - 1) * blockEspaco / 2, 10, (numeroLinhas - 1) * blockEspaco / 2);
 
-    Camera.main.transform.position = posicaoCentral;
-    Camera.main.transform.rotation = Quaternion.Euler(90, 0, 0);
-    Camera.main.orthographicSize = Mathf.Max(numeroColunas, numeroLinhas) * blockEspaco / 2;
+    //Camera.main.transform.position = posicaoCentral;
+    //Camera.main.orthographicSize = Mathf.Max(numeroColunas, numeroLinhas) * blockEspaco / 2;
 }
     public void ConquistarTerritorio()
     {
@@ -88,22 +85,20 @@ private void AjustarCamera()
                 {
                     Bloco blocoAtual = grade[i, j];
 
-                    if (blocoAtual.ConquistadoPorJogador1)
+                    if (blocoAtual.PegarConquistado())
                     {
                         blocosJogador1++;
                     }
-                    else if (blocoAtual.ConquistadoPorJogador2)
+                    else if (blocoAtual.PegarConquistado())
                     {
                         blocosJogador2++;
                     }
                 }
             }
 
-          
             FimDeJogo(blocosJogador1, blocosJogador2);
         }
     }
-
 
     private void FimDeJogo(int blocosJogador1, int blocosJogador2)
     {

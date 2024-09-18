@@ -33,9 +33,6 @@ public class Bloco : MonoBehaviour
         jogadorDono = jogador1 ? 1 : 2;
         GameManager.instance.ConquistarTerritorio();
 
-
-        
-       
        
         
     }
