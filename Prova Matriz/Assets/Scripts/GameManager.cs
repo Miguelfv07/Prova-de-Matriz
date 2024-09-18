@@ -1,28 +1,26 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using static Unity.Collections.AllocatorManager;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject bloco;
-    public GameObject jogador1;
-    public GameObject jogador2;
-    int linha;
-    int coluna;
-    float espacamento;
-    Bloco[,] blocos;
-    int contador;
+
+    public GameObject blockPrefab;
+    public GameObject player1Prefab;
+    public GameObject player2Prefab;
+    public int numeroLinhas;
+    public int numeroColunas;
+    public float blockEspaco;
+    private Bloco[,] grade;
+    private int contagem;
+    public static GameManager instance;
 
 
-    // Start is called before the first frame update
-    void Start()
+
+    private void Awake()
     {
-        
+       instance = this;
+       
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
+
