@@ -30,11 +30,14 @@ public class Bloco : MonoBehaviour
         if (jogador1 = conquistado )
         {
             jogadorDono = jogador1 ? 1 : 0;
-            
+            GameManager.instance.ConquistarTerritorio();
+
+
         }
         else
         {
-            
+            jogadorDono = 2;
+            GameManager.instance.ConquistarTerritorio();
         }
     }
     // Start is called before the first frame update
